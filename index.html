@@ -1,79 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HK BAZAR</title>
+document.querySelector("button:last-of-type").addEventListener("click", function () {
 
-<link rel="stylesheet" href="style.css">
+  const uid = document.querySelector('input[placeholder="Free Fire UID"]').value.trim();
+  const trx = document.querySelector('input[placeholder="Transaction ID"]').value.trim();
 
-</head>
-<body>
+  if (uid === "" || trx === "") {
+    alert("Please fill all fields!");
+    return;
+  }
 
-<header>HK BAZAR</header>
-
-<div class="hero">
-<h1>Free Fire Diamond Top-Up</h1>
-<p>Welcome to HK BAZAR</p>
-<button onclick="document.querySelector('.order').scrollIntoView({behavior:'smooth'})">
-Buy Now
-</button>
-</div>
-
-<section class="packages">
-<h2>Diamond Packages</h2>
-
-<div class="card">
-<h3>💎 25 Diamond</h3>
-<p>৳25</p>
-<button onclick="document.querySelector('.order').scrollIntoView({behavior:'smooth'})">
-Buy Now
-</button>
-</div>
-
-<div class="card">
-<h3>💎 115 Diamond</h3>
-<p>৳95</p>
-<button onclick="document.querySelector('.order').scrollIntoView({behavior:'smooth'})">
-Buy Now
-</button>
-</div>
-
-<div class="card">
-<h3>💎 240 Diamond</h3>
-<p>৳190</p>
-<button onclick="document.querySelector('.order').scrollIntoView({behavior:'smooth'})">
-Buy Now
-</button>
-</div>
-
-</section>
-
-<section class="payment">
-<h2>Payment</h2>
-
-<p><strong>bKash (Send Money):</strong> 01319151173</p>
-
-<p><strong>Nagad (Send Money):</strong> 01602839786</p>
-
-<p>Payment করার পরে নিচে আপনার Free Fire UID এবং Transaction ID লিখে Order Submit করুন।</p>
-
-</section>
-
-<section class="order">
-<h2>Place Your Order</h2>
-
-<p><b>bKash:</b> 01319151173</p>
-<p><b>Nagad:</b> 01602839786</p>
-
-<input type="text" placeholder="Free Fire UID"><br><br>
-
-<input type="text" placeholder="Transaction ID"><br><br>
-
-<button>Submit Order</button>
-</section>
-
-<script src="script.js"></script>
-
-</body>
-</html>
+  alert("Order Submitted Successfully!");
+});
