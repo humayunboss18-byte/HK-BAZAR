@@ -1,23 +1,14 @@
-const buttons = document.querySelectorAll("button");
+const submitBtn = document.querySelector(".order button");
 
-buttons.forEach(button => {
-  button.addEventListener("click", function () {
-    document.querySelector(".order").scrollIntoView({
-      behavior: "smooth"
-    });
-  });
-});
-document.querySelector("button:last-of-type").addEventListener("click", function () {
+submitBtn.addEventListener("click", function () {
 
-const uid = document.querySelector('input[placeholder="Free Fire UID"]').value;
+  const uid = document.querySelector('input[placeholder="Free Fire UID"]').value.trim();
+  const trx = document.querySelector('input[placeholder="Transaction ID"]').value.trim();
 
-const trx = document.querySelector('input[placeholder="Transaction ID"]').value;
+  if (uid === "" || trx === "") {
+    alert("Please fill all fields!");
+    return;
+  }
 
-if(uid === "" || trx === ""){
-alert("Please fill all fields!");
-return;
-}
-
-alert("Order Submitted Successfully!");
-
+  alert("Order Submitted Successfully!");
 });
