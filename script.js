@@ -1,36 +1,25 @@
-.packages{
-    padding:40px 20px;
-    text-align:center;
-}
+document.addEventListener("DOMContentLoaded", function () {
 
-.card{
-    background:#1f2937;
-    color:#fff;
-    margin:20px auto;
-    padding:20px;
-    border-radius:15px;
-    width:280px;
-    box-shadow:0 0 10px rgba(0,0,0,.3);
-}
+    const submitBtn = document.getElementById("submitBtn");
 
-.card h3{
-    margin:0;
-    font-size:28px;
-}
+    submitBtn.addEventListener("click", function () {
 
-.card p{
-    font-size:22px;
-    color:#ffd700;
-    margin:10px 0;
-}
+        const uid = document.getElementById("uid").value.trim();
+        const trx = document.getElementById("trx").value.trim();
 
-.card button{
-    background:#ffd700;
-    color:#000;
-    border:none;
-    padding:12px 30px;
-    border-radius:10px;
-    font-size:18px;
-    cursor:pointer;
-  }
+        if (uid === "" || trx === "") {
+            alert("Please fill all fields!");
+            return;
+        }
 
+        alert(
+            "✅ Order Submitted Successfully!\n\n" +
+            "UID: " + uid + "\n" +
+            "Transaction ID: " + trx
+        );
+
+        document.getElementById("uid").value = "";
+        document.getElementById("trx").value = "";
+    });
+
+});
