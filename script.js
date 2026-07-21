@@ -1,4 +1,4 @@
-alert("JavaScript Loaded");
+
 
 .packages{
     padding:40px 20px;
