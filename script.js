@@ -1,14 +1,17 @@
-const submitBtn = document.querySelector(".order button");
+const submitBtn = document.getElementById("submitBtn");
 
 submitBtn.addEventListener("click", function () {
 
-  const uid = document.querySelector('input[placeholder="Free Fire UID"]').value.trim();
-  const trx = document.querySelector('input[placeholder="Transaction ID"]').value.trim();
+  const uid = document.getElementById("uid").value.trim();
+  const trx = document.getElementById("trx").value.trim();
 
   if (uid === "" || trx === "") {
-    alert("Please fill all fields!");
+    alert("Please enter your UID and Transaction ID.");
     return;
   }
 
-  alert("Order Submitted Successfully!");
+  alert("✅ Order Submitted Successfully!\n\nUID: " + uid + "\nTransaction ID: " + trx);
+
+  document.getElementById("uid").value = "";
+  document.getElementById("trx").value = "";
 });
