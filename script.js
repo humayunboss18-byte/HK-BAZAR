@@ -15,3 +15,26 @@ submitBtn.addEventListener("click", function () {
   document.getElementById("uid").value = "";
   document.getElementById("trx").value = "";
 });
+<div class="card">
+    <h3>25 Diamond</h3>
+    <p>৳25</p>
+    <button onclick="document.querySelector('.order').scrollIntoView({behavior:'smooth'})">
+        Buy Now
+    </button>
+</div>
+
+<div class="card">
+    <h3>115 Diamond</h3>
+    <p>৳95</p>
+    <button onclick="document.querySelector('.order').scrollIntoView({behavior:'smooth'})">
+        Buy Now
+    </button>
+</div>
+
+<div class="card">
+    <h3>240 Diamond</h3>
+    <p>৳190</p>
+    <button onclick="document.querySelector('.order').scrollIntoView({behavior:'smooth'})">
+        Buy Now
+    </button>
+</div>
