@@ -6,6 +6,7 @@
 <title>HK BAZAR</title>
 <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <header>
@@ -17,57 +18,83 @@
     <h2>Welcome to HK BAZAR</h2>
     <p>Buy Diamonds Safely</p>
 
-    <button onclick="document.querySelector('.order').scrollIntoView({behavior:'smooth'})">
+    <button onclick="document.getElementById('order').scrollIntoView({behavior:'smooth'})">
         Buy Now
     </button>
 </section>
 
 <section class="packages">
-    <h2>Diamond Packages</h2>
 
-    <div class="card">
-        <h3>25 Diamond</h3>
-        <p>৳25</p>
-        <button onclick="document.querySelector('.order').scrollIntoView({behavior:'smooth'})">
-            Buy Now
-        </button>
-    </div>
+<h2>Diamond Packages</h2>
 
-    <div class="card">
-        <h3>115 Diamond</h3>
-        <p>৳95</p>
-        <button onclick="document.querySelector('.order').scrollIntoView({behavior:'smooth'})">
-            Buy Now
-        </button>
-    </div>
+<div class="card">
+<h3>25 Diamond</h3>
+<p>৳25</p>
+<button onclick="document.getElementById('order').scrollIntoView({behavior:'smooth'})">
+Buy Now
+</button>
+</div>
 
-    <div class="card">
-        <h3>240 Diamond</h3>
-        <p>৳190</p>
-        <button onclick="document.querySelector('.order').scrollIntoView({behavior:'smooth'})">
-            Buy Now
-        </button>
-    </div>
+<div class="card">
+<h3>115 Diamond</h3>
+<p>৳95</p>
+<button onclick="document.getElementById('order').scrollIntoView({behavior:'smooth'})">
+Buy Now
+</button>
+</div>
+
+<div class="card">
+<h3>240 Diamond</h3>
+<p>৳190</p>
+<button onclick="document.getElementById('order').scrollIntoView({behavior:'smooth'})">
+Buy Now
+</button>
+</div>
+
+<div class="card">
+<h3>610 Diamond</h3>
+<p>৳470</p>
+<button onclick="document.getElementById('order').scrollIntoView({behavior:'smooth'})">
+Buy Now
+</button>
+</div>
+
+<div class="card">
+<h3>1240 Diamond</h3>
+<p>৳930</p>
+<button onclick="document.getElementById('order').scrollIntoView({behavior:'smooth'})">
+Buy Now
+</button>
+</div>
 
 </section>
 
 <section class="payment">
-    <h2>Payment</h2>
 
-    <p><b>bKash (Send Money):</b> 01319151173</p>
-    <p><b>Nagad (Send Money):</b> 01602839786</p>
+<h2>Payment</h2>
 
-    <p>Send Money করার পরে নিচের ফর্ম পূরণ করুন।</p>
+<p><b>bKash (Send Money):</b> 01319151173</p>
+
+<p><b>Nagad (Send Money):</b> 01602839786</p>
+
+<p>Send Money করার পরে নিচের ফর্ম পূরণ করুন।</p>
+
 </section>
 
-<section class="order">
-    <h2>Place Your Order</h2>
+<section id="order" class="order">
 
-    <input type="text" id="uid" placeholder="Free Fire UID"><br><br>
+<h2>Place Your Order</h2>
 
-    <input type="text" id="trx" placeholder="Transaction ID"><br><br>
+<input type="text" id="uid" placeholder="Enter Free Fire UID">
 
-    <button id="submitBtn">Submit Order</button>
+<br><br>
+
+<input type="text" id="trx" placeholder="Enter Transaction ID">
+
+<br><br>
+
+<button id="submitBtn">Submit Order</button>
+
 </section>
 
 <script src="script.js"></script>
