@@ -1,1 +1,53 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0b1020;
+  color: white;
+}
 
+header {
+  background: #111827;
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  color: gold;
+  margin: 0;
+}
+
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #0066ff, #001f5c);
+}
+
+.hero button {
+  background: gold;
+  color: black;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+.card {
+  background: #1f2937;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid gold;
+}
+
+.card h3 {
+  margin-top: 0;
+  color: gold;
+}
