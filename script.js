@@ -33,3 +33,4 @@
     font-size:18px;
     cursor:pointer;
   }
+alert("JavaScript Loaded");
