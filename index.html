@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>HK BAZAR</title>
-
 <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <header>
@@ -17,25 +17,38 @@
 <section class="hero">
 <h2>Fast & Trusted Top-Up</h2>
 <p>Buy Free Fire Diamonds at the best price.</p>
-<a href="#order" class="btn">Buy Now</a>
+
+<button onclick="document.querySelector('.order').scrollIntoView({behavior:'smooth'})">
+Buy Now
+</button>
 </section>
 
 <section class="packages">
+
 <h2>Diamond Packages</h2>
 
 <div class="card">
-<h3>25 Diamond</h3>
+<h3>💎 25 Diamond</h3>
 <p>৳25</p>
+<button onclick="document.querySelector('.order').scrollIntoView({behavior:'smooth'})">
+Buy Now
+</button>
 </div>
 
 <div class="card">
-<h3>115 Diamond</h3>
+<h3>💎 115 Diamond</h3>
 <p>৳95</p>
+<button onclick="document.querySelector('.order').scrollIntoView({behavior:'smooth'})">
+Buy Now
+</button>
 </div>
 
 <div class="card">
-<h3>240 Diamond</h3>
+<h3>💎 240 Diamond</h3>
 <p>৳190</p>
+<button onclick="document.querySelector('.order').scrollIntoView({behavior:'smooth'})">
+Buy Now
+</button>
 </div>
 
 </section>
@@ -43,18 +56,20 @@
 <section class="payment">
 <h2>Payment</h2>
 
-<p><b>bKash:</b> 01319151173</p>
-<p><b>Nagad:</b> 01602839786</p>
+<p><b>bKash (Send Money):</b> 01319151173</p>
+<p><b>Nagad (Send Money):</b> 01602839786</p>
 
-<p>Send Money করে নিচের ফর্ম পূরণ করুন।</p>
+<p>Send Money করার পরে নিচের ফর্ম পূরণ করুন।</p>
+
 </section>
 
-<section id="order" class="order">
+<section class="order">
+
 <h2>Place Your Order</h2>
 
-<input type="text" id="uid" placeholder="Free Fire UID">
+<input type="text" id="uid" placeholder="Free Fire UID"><br><br>
 
-<input type="text" id="trx" placeholder="Transaction ID">
+<input type="text" id="trx" placeholder="Transaction ID"><br><br>
 
 <button id="submitBtn">Submit Order</button>
 
@@ -64,26 +79,3 @@
 
 </body>
 </html>
-<div class="card">
-    <h3>25 Diamond</h3>
-    <p>৳25</p>
-    <button onclick="document.querySelector('.order').scrollIntoView({behavior:'smooth'})">
-        Buy Now
-    </button>
-</div>
-
-<div class="card">
-    <h3>115 Diamond</h3>
-    <p>৳95</p>
-    <button onclick="document.querySelector('.order').scrollIntoView({behavior:'smooth'})">
-        Buy Now
-    </button>
-</div>
-
-<div class="card">
-    <h3>240 Diamond</h3>
-    <p>৳190</p>
-    <button onclick="document.querySelector('.order').scrollIntoView({behavior:'smooth'})">
-        Buy Now
-    </button>
-</div>
