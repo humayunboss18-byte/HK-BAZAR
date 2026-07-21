@@ -1,3 +1,4 @@
+alert("Script Loaded");
 document.getElementById("submitBtn").addEventListener("click", function () {
 
     const uid = document.getElementById("uid").value.trim();
