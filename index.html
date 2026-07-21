@@ -1,12 +1,27 @@
-document.querySelector("button:last-of-type").addEventListener("click", function () {
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HK BAZAR</title>
 
-  const uid = document.querySelector('input[placeholder="Free Fire UID"]').value.trim();
-  const trx = document.querySelector('input[placeholder="Transaction ID"]').value.trim();
+<link rel="stylesheet" href="style.css">
+</head>
 
-  if (uid === "" || trx === "") {
-    alert("Please fill all fields!");
-    return;
-  }
+<body>
 
-  alert("Order Submitted Successfully!");
-});
+<header>HK BAZAR</header>
+
+<div class="hero">
+  <h1>Free Fire Diamond Top-Up</h1>
+  <p>Welcome to HK BAZAR</p>
+
+  <button onclick="document.querySelector('.order').scrollIntoView({behavior:'smooth'})">
+    Buy Now
+  </button>
+</div>
+
+<section class="packages">
+  <h2>Diamond Packages</h2>
+
+  <
