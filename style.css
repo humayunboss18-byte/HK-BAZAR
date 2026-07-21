@@ -1,3 +1,4 @@
+
 *{
     margin:0;
     padding:0;
@@ -32,12 +33,12 @@ header p{
 }
 
 .hero h2{
-    font-size:42px;
+    font-size:40px;
     margin-bottom:15px;
 }
 
 .hero p{
-    font-size:24px;
+    font-size:22px;
     margin-bottom:30px;
 }
 
@@ -49,3 +50,63 @@ button{
     font-size:22px;
     border-radius:10px;
     cursor:pointer;
+}
+
+button:hover{
+    background:#ffbf00;
+}
+
+.packages{
+    padding:40px 20px;
+    text-align:center;
+}
+
+.card{
+    background:#1f2937;
+    width:300px;
+    margin:20px auto;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 0 10px rgba(0,0,0,.4);
+}
+
+.card h3{
+    font-size:28px;
+    margin-bottom:10px;
+}
+
+.card p{
+    font-size:24px;
+    color:#ffd700;
+    margin-bottom:15px;
+}
+
+.payment,
+.order{
+    padding:40px 20px;
+    text-align:center;
+}
+
+.payment h2,
+.order h2{
+    margin-bottom:20px;
+}
+
+.payment p{
+    margin:10px 0;
+    font-size:20px;
+}
+
+input{
+    width:300px;
+    max-width:90%;
+    padding:12px;
+    font-size:18px;
+    border-radius:8px;
+    border:none;
+    margin:10px 0;
+}
+
+.order button{
+    margin-top:20px;
+}
