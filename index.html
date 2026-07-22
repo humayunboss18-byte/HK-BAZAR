@@ -3,79 +3,77 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HK BAZAR</title>
+<title>HK-BAZAR</title>
+
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-    <h1>HK BAZAR</h1>
-    <p>Free Fire Diamond Top-Up</p>
+<h1>HK-BAZAR</h1>
+<p>Fast & Trusted Free Fire Diamond Shop</p>
 </header>
 
-<section class="hero">
-    <h2>Welcome to HK BAZAR</h2>
-    <p>Fast & Trusted Diamond Top-Up</p>
-
-    <button onclick="document.getElementById('order').scrollIntoView({behavior:'smooth'})">
-        Buy Now
-    </button>
-</section>
-
 <section class="packages">
-    <h2>Diamond Packages</h2>
 
-    <div class="card">
-        <h3>💎 25 Diamond</h3>
-        <p>৳25</p>
-        <button onclick="document.getElementById('order').scrollIntoView({behavior:'smooth'})">Buy Now</button>
-    </div>
+<div class="card">
+<h3>25 Diamond</h3>
+<p>৳25</p>
+<button>Buy Now</button>
+</div>
 
-    <div class="card">
-        <h3>💎 115 Diamond</h3>
-        <p>৳95</p>
-        <button onclick="document.getElementById('order').scrollIntoView({behavior:'smooth'})">Buy Now</button>
-    </div>
+<div class="card">
+<h3>115 Diamond</h3>
+<p>৳95</p>
+<button>Buy Now</button>
+</div>
 
-    <div class="card">
-        <h3>💎 240 Diamond</h3>
-        <p>৳190</p>
-        <button onclick="document.getElementById('order').scrollIntoView({behavior:'smooth'})">Buy Now</button>
-    </div>
+<div class="card">
+<h3>240 Diamond</h3>
+<p>৳190</p>
+<button>Buy Now</button>
+</div>
 
-    <div class="card">
-        <h3>💎 610 Diamond</h3>
-        <p>৳470</p>
-        <button onclick="document.getElementById('order').scrollIntoView({behavior:'smooth'})">Buy Now</button>
-    </div>
-
-    <div class="card">
-        <h3>💎 1240 Diamond</h3>
-        <p>৳930</p>
-        <button onclick="document.getElementById('order').scrollIntoView({behavior:'smooth'})">Buy Now</button>
-    </div>
 </section>
 
 <section class="payment">
-    <h2>Payment</h2>
+<h2>Payment</h2>
 
-    <p><strong>bKash:</strong> 01319151173</p>
-    <p><strong>Nagad:</strong> 01602839786</p>
+<p><b>bKash (Send Money):</b> 01319151173</p>
 
-    <p>Payment করার পরে নিচে আপনার UID ও Transaction ID লিখুন।</p>
+<p><b>Nagad (Send Money):</b> 01602839786</p>
+
+<p>Send Money করার পরে নিচের ফর্ম পূরণ করুন।</p>
+
 </section>
 
-<section id="order" class="order">
-    <h2>Place Your Order</h2>
+<section class="order">
 
-    <input type="text" id="uid" placeholder="Free Fire UID"><br><br>
+<h2>Place Your Order</h2>
 
-    <input type="text" id="trx" placeholder="Transaction ID"><br><br>
+<form action="https://api.web3forms.com/submit" method="POST">
 
-    <button id="submitBtn">Submit Order</button>
+<input type="hidden" name="access_key" value="a91bcf6b-b2e0-488e-8877-1aff91574dde">
+
+<input
+type="text"
+name="UID"
+placeholder="Free Fire UID"
+required>
+
+<input
+type="text"
+name="Transaction ID"
+placeholder="Transaction ID"
+required>
+
+<button type="submit">
+Submit Order
+</button>
+
+</form>
+
 </section>
-
-<script src="script.js"></script>
 
 </body>
 </html>
